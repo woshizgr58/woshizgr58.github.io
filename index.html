@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="topnav">
+        <a class="active text" href="index.html">Home</a>
+        <a class="text" href="about.html">About</a>
+        <a class="text" href="resume.html">Resume</a>
+        <a class="text" href="projects.html">Projects</a>
+        <a class="text" href="photography.html">Photography</a>
+</div>
+    <div class="home">
+ 
+        <img class="headshot" src="headshot.png" alt="kevin's face">
+
+        <div class="homebox rightside">
+            <h3 class="text">Hi there! I'm</h3>
+            <h1 class="text">Kevin,</h1>
+            <h4 class="text">I'm an aspiring software engineer and a photographer on the side. <a class="text getInTouch" onclick="scrollToSection()">Let's get in touch!</a> </h4>
+            
+        </div>
+
+    </div>
+    <form action="https://formspree.io/f/xpwavvwq" method="POST">
+        <div class="contact" id="contact">
+        
+            <h1 class="text">Contact Me!</h1>
+            <input type="text" name="name" id="" autocomplete="off" placeholder="Your Name"  required>
+            <input type="email" name="email" id="" autocomplete="off" placeholder="Email Address" required>
+            <textarea rows="5" cols="60" name="message" placeholder="Enter Message" autocomplete="off" required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        function scrollToSection() {
+            document.getElementById("contact").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+        </script>
+</body>
+
+</html>
+

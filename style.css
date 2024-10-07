@@ -1,0 +1,177 @@
+.topnav {
+    background-color: grey;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+  }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.text {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.headshot {
+  max-width: 30%;
+}
+
+.home {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+.homebox {
+  padding: 10% 10% 0 10%;
+  /* width: 100%; */
+}
+
+.homebox h1 {
+  font-size: 400%;
+  font-weight: 500;
+}
+
+
+.resume {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.photo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+#portfolio-text {
+  align-items: ba;
+  margin: 5%;
+}
+
+#portfolio-text h1 {
+  font-size: 400%;
+  font-weight: 50;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input, textarea, button{
+  font-family: "Yantramanav", sans-serif;
+  width: 400px;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+  margin: 1%;
+
+}
+
+.contact h1 {
+  font-weight: 500;
+}
+
+.contact button{
+  width: 100px
+}
+
+.contact input:hover, textarea:hover, button:hover {
+  box-shadow: 5.5px 7px 0 black;
+}
+
+.getInTouch {
+  color: blue;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.about {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  /* gap: px 0px;  */
+  gap: 5%;
+  grid-template-areas: 
+    "pic-div about-text about-text"
+    "pic-div pic-div2 pic-div3"
+    ". . ."; 
+}
+
+.about-text {
+  text-align: center;
+  height: fit-content;
+
+}
+
+.about-text h1 {
+  font-size: 400%;
+  font-weight: 50;
+}
+
+.about-text h2 {
+  font-size: 200%;
+}
+
+.pic-div { 
+  grid-area: pic-div;
+ }
+.about-text { 
+  grid-area: about-text;
+  height: fit-content;
+ }
+.pic-div2 { grid-area: pic-div2; }
+.pic-div3 { grid-area: pic-div3; }
+
+.project-container {
+  text-align: center;
+}
+
+.project-container p {
+  font-size: 150%;
+}
+
+.project-container h2 {
+  font-size: 250%;
+}
+
+.project-text {
+  font-size: 400%;
+  font-weight: 50;
+}
+
+.goplanner-pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.goplanner-pics img {
+  max-width: 100%;
+}
